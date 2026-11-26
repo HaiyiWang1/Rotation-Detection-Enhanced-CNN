@@ -1,11 +1,11 @@
-# Rotation-Detection-Enhanced-Convolutional-Neural-Network
-Modified CNN Model which is rotation detection enhanced
+# Rotation Detection Enhanced Convolutional Neural Network (RDECNN)
+Enhances standard CNN architecture with improved sensitivity and adaptability to object rotation.
 
+Training Scripts & Methods:
+  - Train_CNN.py / Train_RDECNN.py: Entry points for training the baseline CNN and enhanced RDECNN models.
+  - train(): Trains the model solely on original images.
+  - mixed_train(): Trains on a combined dataset of original and rotated images (Data Augmentation).
 
-
-`Train_CNN.py` and `Train_RDECNN.py` are used to train two models
-Each of them has "train()-use only original images" and "mixed_train()-use both original and rotated images" methods
-
-Each of them has "test()-use only original images" and "polluted_test()()-use only rotated images" methods
-
-Paper may be helpful: https://ieeexplore.ieee.org/abstract/document/8296411
+ Evaluation Methods:
+   - test(): Evaluates model accuracy on the original unrotated test set.
+   - polluted_test(): Evaluates rotation robustness exclusively on rotated test images.
